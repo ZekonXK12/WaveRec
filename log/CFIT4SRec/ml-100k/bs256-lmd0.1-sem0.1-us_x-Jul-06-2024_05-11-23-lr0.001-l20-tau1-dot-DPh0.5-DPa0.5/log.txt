@@ -1,0 +1,336 @@
+Sat 06 Jul 2024 05:11:23 INFO  
+[1;35mGeneral Hyper Parameters:
+[0m[1;36mgpu_id[0m =[1;33m 0[0m
+[1;36muse_gpu[0m =[1;33m True[0m
+[1;36mseed[0m =[1;33m 2020[0m
+[1;36mstate[0m =[1;33m INFO[0m
+[1;36mreproducibility[0m =[1;33m True[0m
+[1;36mdata_path[0m =[1;33m F:\Essex\dissertation\CFIT4SRec\recbole\config\../dataset_example/ml-100k[0m
+[1;36mshow_progress[0m =[1;33m True[0m
+
+[1;35mTraining Hyper Parameters:
+[0m[1;36mcheckpoint_dir[0m =[1;33m saved[0m
+[1;36mepochs[0m =[1;33m 50[0m
+[1;36mtrain_batch_size[0m =[1;33m 256[0m
+[1;36mlearner[0m =[1;33m adam[0m
+[1;36mlearning_rate[0m =[1;33m 0.001[0m
+[1;36mtraining_neg_sample_num[0m =[1;33m 0[0m
+[1;36mtraining_neg_sample_distribution[0m =[1;33m uniform[0m
+[1;36meval_step[0m =[1;33m 1[0m
+[1;36mstopping_step[0m =[1;33m 10[0m
+[1;36mclip_grad_norm[0m =[1;33m None[0m
+[1;36mweight_decay[0m =[1;33m 0[0m
+[1;36mdraw_loss_pic[0m =[1;33m False[0m
+[1;36mloss_decimal_place[0m =[1;33m 4[0m
+
+[1;35mEvaluation Hyper Parameters:
+[0m[1;36meval_setting[0m =[1;33m TO_LS,full[0m
+[1;36mgroup_by_user[0m =[1;33m True[0m
+[1;36msplit_ratio[0m =[1;33m [0.8, 0.1, 0.1][0m
+[1;36mleave_one_num[0m =[1;33m 2[0m
+[1;36mreal_time_process[0m =[1;33m False[0m
+[1;36mmetrics[0m =[1;33m ['NDCG', 'Hit'][0m
+[1;36mtopk[0m =[1;33m [5, 10, 20][0m
+[1;36mvalid_metric[0m =[1;33m Hit@10[0m
+[1;36meval_batch_size[0m =[1;33m 256[0m
+[1;36mmetric_decimal_place[0m =[1;33m 4[0m
+
+[1;35mDataset Hyper Parameters:
+[0m[1;36mfield_separator[0m =[1;33m 	[0m
+[1;36mseq_separator[0m =[1;33m  [0m
+[1;36mUSER_ID_FIELD[0m =[1;33m user_id[0m
+[1;36mITEM_ID_FIELD[0m =[1;33m item_id[0m
+[1;36mRATING_FIELD[0m =[1;33m rating[0m
+[1;36mTIME_FIELD[0m =[1;33m timestamp[0m
+[1;36mseq_len[0m =[1;33m None[0m
+[1;36mLABEL_FIELD[0m =[1;33m label[0m
+[1;36mthreshold[0m =[1;33m None[0m
+[1;36mNEG_PREFIX[0m =[1;33m neg_[0m
+[1;36mload_col[0m =[1;33m {'inter': ['user_id', 'item_id', 'rating', 'timestamp']}[0m
+[1;36munload_col[0m =[1;33m None[0m
+[1;36munused_col[0m =[1;33m None[0m
+[1;36madditional_feat_suffix[0m =[1;33m None[0m
+[1;36mrm_dup_inter[0m =[1;33m None[0m
+[1;36mlowest_val[0m =[1;33m None[0m
+[1;36mhighest_val[0m =[1;33m None[0m
+[1;36mequal_val[0m =[1;33m None[0m
+[1;36mnot_equal_val[0m =[1;33m None[0m
+[1;36mfilter_inter_by_user_or_item[0m =[1;33m True[0m
+[1;36mmax_user_inter_num[0m =[1;33m None[0m
+[1;36mmin_user_inter_num[0m =[1;33m 5[0m
+[1;36mmax_item_inter_num[0m =[1;33m None[0m
+[1;36mmin_item_inter_num[0m =[1;33m 5[0m
+[1;36mfields_in_same_space[0m =[1;33m None[0m
+[1;36mpreload_weight[0m =[1;33m None[0m
+[1;36mnormalize_field[0m =[1;33m None[0m
+[1;36mnormalize_all[0m =[1;33m True[0m
+[1;36mITEM_LIST_LENGTH_FIELD[0m =[1;33m item_length[0m
+[1;36mLIST_SUFFIX[0m =[1;33m _list[0m
+[1;36mMAX_ITEM_LIST_LENGTH[0m =[1;33m 50[0m
+[1;36mPOSITION_FIELD[0m =[1;33m position_id[0m
+[1;36mHEAD_ENTITY_ID_FIELD[0m =[1;33m head_id[0m
+[1;36mTAIL_ENTITY_ID_FIELD[0m =[1;33m tail_id[0m
+[1;36mRELATION_ID_FIELD[0m =[1;33m relation_id[0m
+[1;36mENTITY_ID_FIELD[0m =[1;33m entity_id[0m
+
+[1;35mOther Hyper Parameters: 
+[0m[1;36mvalid_metric_bigger[0m = [1;33mTrue[0m
+[1;36mn_layers[0m = [1;33m2[0m
+[1;36mn_heads[0m = [1;33m2[0m
+[1;36mhidden_size[0m = [1;33m64[0m
+[1;36minner_size[0m = [1;33m258[0m
+[1;36mhidden_dropout_prob[0m = [1;33m0.5[0m
+[1;36mattn_dropout_prob[0m = [1;33m0.5[0m
+[1;36mhidden_act[0m = [1;33mgelu[0m
+[1;36mlayer_norm_eps[0m = [1;33m1e-12[0m
+[1;36minitializer_range[0m = [1;33m0.02[0m
+[1;36mloss_type[0m = [1;33mCE[0m
+[1;36mlmd[0m = [1;33m0.1[0m
+[1;36mSSL_AUG[0m = [1;33mpaper4[0m
+[1;36mSOURCE_ID_FIELD[0m = [1;33msource_id[0m
+[1;36mTARGET_ID_FIELD[0m = [1;33mtarget_id[0m
+[1;36mbenchmark_filename[0m = [1;33mNone[0m
+[1;36mMODEL_TYPE[0m = [1;33mModelType.SEQUENTIAL[0m
+[1;36mlog_root[0m = [1;33m./log/[0m
+[1;36mlmd_sem[0m = [1;33m0.1[0m
+[1;36mtau[0m = [1;33m1[0m
+[1;36mcontrast[0m = [1;33mus_x[0m
+[1;36msim[0m = [1;33mdot[0m
+[1;36mtrain_r[0m = [1;33m1[0m
+[1;36mnoise[0m = [1;33mCLOSE[0m
+[1;36mnoise_r[0m = [1;33m0[0m
+[1;36msame_length[0m = [1;33m10[0m
+[1;36ml_ok[0m = [1;33mTrue[0m
+[1;36mh_ok[0m = [1;33mTrue[0m
+[1;36mb_ok[0m = [1;33mTrue[0m
+[1;36mlow_r[0m = [1;33mFalse[0m
+[1;36mhigh_r[0m = [1;33mFalse[0m
+[1;36mMODEL_INPUT_TYPE[0m = [1;33mInputType.POINTWISE[0m
+[1;36meval_type[0m = [1;33mEvaluatorType.RANKING[0m
+[1;36mdevice[0m = [1;33mcuda[0m
+[1;36mtrain_neg_sample_args[0m = [1;33m{'strategy': 'none'}[0m
+[1;36mlog_dir[0m = [1;33mF:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5[0m
+
+
+Sat 06 Jul 2024 05:11:23 INFO  Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+Sat 06 Jul 2024 05:11:23 INFO  NumExpr defaulting to 8 threads.
+Sat 06 Jul 2024 05:11:24 INFO  [1;35mml-100k[0m
+[1;34mThe number of users[0m: 944
+[1;34mAverage actions of users[0m: 105.28844114528101
+[1;34mThe number of items[0m: 1350
+[1;34mAverage actions of items[0m: 73.6004447739066
+[1;34mThe number of inters[0m: 99287
+[1;34mThe sparsity of the dataset[0m: 92.20911801632141%
+[1;34mRemain Fields[0m: ['user_id', 'item_id', 'rating', 'timestamp']
+Sat 06 Jul 2024 05:11:24 INFO  [1;35mBuild[0m[1;33m [SequentialDataLoader][0m for [1;33m[train][0m with format [1;33m[InputType.POINTWISE][0m
+Sat 06 Jul 2024 05:11:24 INFO  [1;35m[train][0m[1;33m No Negative Sampling[0m
+Sat 06 Jul 2024 05:11:24 INFO  [1;35m[train][0m[1;36m batch_size[0m = [1;33m[256][0m, [1;36mshuffle[0m = [1;33m[True]
+[0m
+Sat 06 Jul 2024 05:11:26 INFO  [1;35mBuild[0m[1;33m [SequentialFullDataLoader][0m for [1;33m[evaluation][0m with format [1;33m[InputType.POINTWISE][0m
+Sat 06 Jul 2024 05:11:26 INFO  [1;35mEvaluation Setting:[0m
+	[1;34mGroup by[0m user_id
+	[1;34mOrdering[0m: {'strategy': 'by', 'field': 'timestamp', 'ascending': True}
+	[1;34mSplitting[0m: {'strategy': 'loo', 'leave_one_num': 2}
+	[1;34mNegative Sampling[0m: {'strategy': 'full', 'distribution': 'uniform'}
+Sat 06 Jul 2024 05:11:26 INFO  [1;35m[evaluation][0m[1;36m batch_size[0m = [1;33m[256][0m, [1;36mshuffle[0m = [1;33m[False]
+[0m
+Sat 06 Jul 2024 05:11:26 INFO  CFIT4SRec(
+  (item_embedding): Embedding(1351, 64, padding_idx=0)
+  (position_embedding): Embedding(50, 64)
+  (trm_encoder): TransformerEncoder(
+    (layer): ModuleList(
+      (0-1): 2 x TransformerLayer(
+        (multi_head_attention): MultiHeadAttention(
+          (query): Linear(in_features=64, out_features=64, bias=True)
+          (key): Linear(in_features=64, out_features=64, bias=True)
+          (value): Linear(in_features=64, out_features=64, bias=True)
+          (attn_dropout): Dropout(p=0.5, inplace=False)
+          (dense): Linear(in_features=64, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (out_dropout): Dropout(p=0.5, inplace=False)
+        )
+        (feed_forward): FeedForward(
+          (dense_1): Linear(in_features=64, out_features=258, bias=True)
+          (dense_2): Linear(in_features=258, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.5, inplace=False)
+        )
+      )
+    )
+  )
+  (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (loss_fct): CrossEntropyLoss()
+  (nce_fct): CrossEntropyLoss()
+)[1;34m
+Trainable parameters[0m: 190276
+Sat 06 Jul 2024 05:11:54 INFO  [1;32mepoch 0 training[0m [[1;34mtime[0m: 27.20s, [1;34mtrain loss[0m: 3000.2405]
+Sat 06 Jul 2024 05:11:54 INFO  [1;32mepoch 0 evaluating[0m [[1;34mtime[0m: 0.13s, [1;34mvalid_score[0m: 0.039200]
+Sat 06 Jul 2024 05:11:54 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0132+0j)    ndcg@10 : (0.0185+0j)    ndcg@20 : (0.0255+0j)    hit@5 : (0.0223+0j)    hit@10 : (0.0392+0j)    hit@20 : (0.0668+0j)    
+Sat 06 Jul 2024 05:11:54 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:12:21 INFO  [1;32mepoch 1 training[0m [[1;34mtime[0m: 26.80s, [1;34mtrain loss[0m: 2584.4221]
+Sat 06 Jul 2024 05:12:21 INFO  [1;32mepoch 1 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.049800]
+Sat 06 Jul 2024 05:12:21 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0157+0j)    ndcg@10 : (0.0225+0j)    ndcg@20 : (0.0304+0j)    hit@5 : (0.0286+0j)    hit@10 : (0.0498+0j)    hit@20 : (0.0817+0j)    
+Sat 06 Jul 2024 05:12:21 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:12:48 INFO  [1;32mepoch 2 training[0m [[1;34mtime[0m: 26.96s, [1;34mtrain loss[0m: 2487.6749]
+Sat 06 Jul 2024 05:12:48 INFO  [1;32mepoch 2 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.080600]
+Sat 06 Jul 2024 05:12:48 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0308+0j)    ndcg@10 : (0.0399+0j)    ndcg@20 : (0.0563+0j)    hit@5 : (0.052+0j)    hit@10 : (0.0806+0j)    hit@20 : (0.1474+0j)    
+Sat 06 Jul 2024 05:12:48 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:13:16 INFO  [1;32mepoch 3 training[0m [[1;34mtime[0m: 27.46s, [1;34mtrain loss[0m: 2370.8960]
+Sat 06 Jul 2024 05:13:16 INFO  [1;32mepoch 3 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.099700]
+Sat 06 Jul 2024 05:13:16 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0277+0j)    ndcg@10 : (0.0455+0j)    ndcg@20 : (0.065+0j)    hit@5 : (0.0445+0j)    hit@10 : (0.0997+0j)    hit@20 : (0.1771+0j)    
+Sat 06 Jul 2024 05:13:16 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:13:43 INFO  [1;32mepoch 4 training[0m [[1;34mtime[0m: 27.21s, [1;34mtrain loss[0m: 2301.9481]
+Sat 06 Jul 2024 05:13:43 INFO  [1;32mepoch 4 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.106000]
+Sat 06 Jul 2024 05:13:43 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.04+0j)    ndcg@10 : (0.052+0j)    ndcg@20 : (0.071+0j)    hit@5 : (0.0689+0j)    hit@10 : (0.106+0j)    hit@20 : (0.1813+0j)    
+Sat 06 Jul 2024 05:13:43 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:14:10 INFO  [1;32mepoch 5 training[0m [[1;34mtime[0m: 26.98s, [1;34mtrain loss[0m: 2266.5752]
+Sat 06 Jul 2024 05:14:10 INFO  [1;32mepoch 5 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.114500]
+Sat 06 Jul 2024 05:14:10 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0349+0j)    ndcg@10 : (0.053+0j)    ndcg@20 : (0.0702+0j)    hit@5 : (0.0583+0j)    hit@10 : (0.1145+0j)    hit@20 : (0.1824+0j)    
+Sat 06 Jul 2024 05:14:10 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:14:38 INFO  [1;32mepoch 6 training[0m [[1;34mtime[0m: 28.02s, [1;34mtrain loss[0m: 2245.2565]
+Sat 06 Jul 2024 05:14:39 INFO  [1;32mepoch 6 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.119800]
+Sat 06 Jul 2024 05:14:39 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0385+0j)    ndcg@10 : (0.0567+0j)    ndcg@20 : (0.0738+0j)    hit@5 : (0.0626+0j)    hit@10 : (0.1198+0j)    hit@20 : (0.1877+0j)    
+Sat 06 Jul 2024 05:14:39 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:15:07 INFO  [1;32mepoch 7 training[0m [[1;34mtime[0m: 28.10s, [1;34mtrain loss[0m: 2226.3455]
+Sat 06 Jul 2024 05:15:07 INFO  [1;32mepoch 7 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.118800]
+Sat 06 Jul 2024 05:15:07 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0302+0j)    ndcg@10 : (0.0533+0j)    ndcg@20 : (0.0731+0j)    hit@5 : (0.0467+0j)    hit@10 : (0.1188+0j)    hit@20 : (0.1983+0j)    
+Sat 06 Jul 2024 05:15:34 INFO  [1;32mepoch 8 training[0m [[1;34mtime[0m: 27.20s, [1;34mtrain loss[0m: 2213.8443]
+Sat 06 Jul 2024 05:15:34 INFO  [1;32mepoch 8 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.110300]
+Sat 06 Jul 2024 05:15:34 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0341+0j)    ndcg@10 : (0.0505+0j)    ndcg@20 : (0.0747+0j)    hit@5 : (0.0583+0j)    hit@10 : (0.1103+0j)    hit@20 : (0.2057+0j)    
+Sat 06 Jul 2024 05:16:01 INFO  [1;32mepoch 9 training[0m [[1;34mtime[0m: 27.14s, [1;34mtrain loss[0m: 2200.8794]
+Sat 06 Jul 2024 05:16:01 INFO  [1;32mepoch 9 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.123000]
+Sat 06 Jul 2024 05:16:01 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0347+0j)    ndcg@10 : (0.0555+0j)    ndcg@20 : (0.0793+0j)    hit@5 : (0.0583+0j)    hit@10 : (0.123+0j)    hit@20 : (0.2174+0j)    
+Sat 06 Jul 2024 05:16:01 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:16:28 INFO  [1;32mepoch 10 training[0m [[1;34mtime[0m: 27.13s, [1;34mtrain loss[0m: 2189.8817]
+Sat 06 Jul 2024 05:16:29 INFO  [1;32mepoch 10 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.129400]
+Sat 06 Jul 2024 05:16:29 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.041+0j)    ndcg@10 : (0.0596+0j)    ndcg@20 : (0.0825+0j)    hit@5 : (0.07+0j)    hit@10 : (0.1294+0j)    hit@20 : (0.2206+0j)    
+Sat 06 Jul 2024 05:16:29 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:16:56 INFO  [1;32mepoch 11 training[0m [[1;34mtime[0m: 27.07s, [1;34mtrain loss[0m: 2181.6770]
+Sat 06 Jul 2024 05:16:56 INFO  [1;32mepoch 11 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.137900]
+Sat 06 Jul 2024 05:16:56 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0394+0j)    ndcg@10 : (0.0637+0j)    ndcg@20 : (0.085+0j)    hit@5 : (0.0626+0j)    hit@10 : (0.1379+0j)    hit@20 : (0.2227+0j)    
+Sat 06 Jul 2024 05:16:56 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:17:23 INFO  [1;32mepoch 12 training[0m [[1;34mtime[0m: 27.08s, [1;34mtrain loss[0m: 2171.5845]
+Sat 06 Jul 2024 05:17:23 INFO  [1;32mepoch 12 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.125100]
+Sat 06 Jul 2024 05:17:23 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.042+0j)    ndcg@10 : (0.0608+0j)    ndcg@20 : (0.0877+0j)    hit@5 : (0.0668+0j)    hit@10 : (0.1251+0j)    hit@20 : (0.2322+0j)    
+Sat 06 Jul 2024 05:17:50 INFO  [1;32mepoch 13 training[0m [[1;34mtime[0m: 27.43s, [1;34mtrain loss[0m: 2164.7243]
+Sat 06 Jul 2024 05:17:51 INFO  [1;32mepoch 13 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.140000]
+Sat 06 Jul 2024 05:17:51 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0512+0j)    ndcg@10 : (0.0692+0j)    ndcg@20 : (0.0912+0j)    hit@5 : (0.0827+0j)    hit@10 : (0.14+0j)    hit@20 : (0.228+0j)    
+Sat 06 Jul 2024 05:17:51 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:18:18 INFO  [1;32mepoch 14 training[0m [[1;34mtime[0m: 27.61s, [1;34mtrain loss[0m: 2159.6584]
+Sat 06 Jul 2024 05:18:18 INFO  [1;32mepoch 14 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.137900]
+Sat 06 Jul 2024 05:18:18 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0386+0j)    ndcg@10 : (0.0634+0j)    ndcg@20 : (0.0877+0j)    hit@5 : (0.0604+0j)    hit@10 : (0.1379+0j)    hit@20 : (0.2354+0j)    
+Sat 06 Jul 2024 05:18:45 INFO  [1;32mepoch 15 training[0m [[1;34mtime[0m: 27.09s, [1;34mtrain loss[0m: 2155.0420]
+Sat 06 Jul 2024 05:18:45 INFO  [1;32mepoch 15 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.141000]
+Sat 06 Jul 2024 05:18:45 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0439+0j)    ndcg@10 : (0.0662+0j)    ndcg@20 : (0.0902+0j)    hit@5 : (0.071+0j)    hit@10 : (0.141+0j)    hit@20 : (0.2365+0j)    
+Sat 06 Jul 2024 05:18:45 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:19:13 INFO  [1;32mepoch 16 training[0m [[1;34mtime[0m: 27.17s, [1;34mtrain loss[0m: 2148.7806]
+Sat 06 Jul 2024 05:19:13 INFO  [1;32mepoch 16 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.133600]
+Sat 06 Jul 2024 05:19:13 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0428+0j)    ndcg@10 : (0.062+0j)    ndcg@20 : (0.0895+0j)    hit@5 : (0.0742+0j)    hit@10 : (0.1336+0j)    hit@20 : (0.2439+0j)    
+Sat 06 Jul 2024 05:19:40 INFO  [1;32mepoch 17 training[0m [[1;34mtime[0m: 27.21s, [1;34mtrain loss[0m: 2145.3772]
+Sat 06 Jul 2024 05:19:40 INFO  [1;32mepoch 17 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.146300]
+Sat 06 Jul 2024 05:19:40 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0525+0j)    ndcg@10 : (0.0721+0j)    ndcg@20 : (0.0959+0j)    hit@5 : (0.0838+0j)    hit@10 : (0.1463+0j)    hit@20 : (0.2418+0j)    
+Sat 06 Jul 2024 05:19:40 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:20:07 INFO  [1;32mepoch 18 training[0m [[1;34mtime[0m: 27.24s, [1;34mtrain loss[0m: 2141.2279]
+Sat 06 Jul 2024 05:20:07 INFO  [1;32mepoch 18 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.140000]
+Sat 06 Jul 2024 05:20:07 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0474+0j)    ndcg@10 : (0.0674+0j)    ndcg@20 : (0.0898+0j)    hit@5 : (0.0774+0j)    hit@10 : (0.14+0j)    hit@20 : (0.2291+0j)    
+Sat 06 Jul 2024 05:20:35 INFO  [1;32mepoch 19 training[0m [[1;34mtime[0m: 27.13s, [1;34mtrain loss[0m: 2138.2629]
+Sat 06 Jul 2024 05:20:35 INFO  [1;32mepoch 19 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.134700]
+Sat 06 Jul 2024 05:20:35 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0445+0j)    ndcg@10 : (0.0627+0j)    ndcg@20 : (0.0881+0j)    hit@5 : (0.0774+0j)    hit@10 : (0.1347+0j)    hit@20 : (0.2354+0j)    
+Sat 06 Jul 2024 05:21:02 INFO  [1;32mepoch 20 training[0m [[1;34mtime[0m: 27.60s, [1;34mtrain loss[0m: 2133.8963]
+Sat 06 Jul 2024 05:21:02 INFO  [1;32mepoch 20 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.123000]
+Sat 06 Jul 2024 05:21:02 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0501+0j)    ndcg@10 : (0.0649+0j)    ndcg@20 : (0.0918+0j)    hit@5 : (0.0774+0j)    hit@10 : (0.123+0j)    hit@20 : (0.2301+0j)    
+Sat 06 Jul 2024 05:21:29 INFO  [1;32mepoch 21 training[0m [[1;34mtime[0m: 27.02s, [1;34mtrain loss[0m: 2131.5631]
+Sat 06 Jul 2024 05:21:29 INFO  [1;32mepoch 21 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.130400]
+Sat 06 Jul 2024 05:21:29 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0427+0j)    ndcg@10 : (0.0631+0j)    ndcg@20 : (0.0903+0j)    hit@5 : (0.0668+0j)    hit@10 : (0.1304+0j)    hit@20 : (0.2386+0j)    
+Sat 06 Jul 2024 05:21:56 INFO  [1;32mepoch 22 training[0m [[1;34mtime[0m: 27.00s, [1;34mtrain loss[0m: 2128.0871]
+Sat 06 Jul 2024 05:21:57 INFO  [1;32mepoch 22 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.135700]
+Sat 06 Jul 2024 05:21:57 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0458+0j)    ndcg@10 : (0.0659+0j)    ndcg@20 : (0.0899+0j)    hit@5 : (0.0732+0j)    hit@10 : (0.1357+0j)    hit@20 : (0.2312+0j)    
+Sat 06 Jul 2024 05:22:24 INFO  [1;32mepoch 23 training[0m [[1;34mtime[0m: 27.01s, [1;34mtrain loss[0m: 2125.3331]
+Sat 06 Jul 2024 05:22:24 INFO  [1;32mepoch 23 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.134700]
+Sat 06 Jul 2024 05:22:24 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0511+0j)    ndcg@10 : (0.0678+0j)    ndcg@20 : (0.0917+0j)    hit@5 : (0.0827+0j)    hit@10 : (0.1347+0j)    hit@20 : (0.2301+0j)    
+Sat 06 Jul 2024 05:22:51 INFO  [1;32mepoch 24 training[0m [[1;34mtime[0m: 27.03s, [1;34mtrain loss[0m: 2123.0196]
+Sat 06 Jul 2024 05:22:51 INFO  [1;32mepoch 24 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.136800]
+Sat 06 Jul 2024 05:22:51 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.046+0j)    ndcg@10 : (0.0661+0j)    ndcg@20 : (0.0907+0j)    hit@5 : (0.0742+0j)    hit@10 : (0.1368+0j)    hit@20 : (0.2344+0j)    
+Sat 06 Jul 2024 05:23:18 INFO  [1;32mepoch 25 training[0m [[1;34mtime[0m: 27.03s, [1;34mtrain loss[0m: 2121.3017]
+Sat 06 Jul 2024 05:23:18 INFO  [1;32mepoch 25 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.141000]
+Sat 06 Jul 2024 05:23:18 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0504+0j)    ndcg@10 : (0.0694+0j)    ndcg@20 : (0.0902+0j)    hit@5 : (0.0817+0j)    hit@10 : (0.141+0j)    hit@20 : (0.2238+0j)    
+Sat 06 Jul 2024 05:23:45 INFO  [1;32mepoch 26 training[0m [[1;34mtime[0m: 27.00s, [1;34mtrain loss[0m: 2117.6404]
+Sat 06 Jul 2024 05:23:45 INFO  [1;32mepoch 26 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.148500]
+Sat 06 Jul 2024 05:23:45 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0487+0j)    ndcg@10 : (0.0716+0j)    ndcg@20 : (0.0967+0j)    hit@5 : (0.0774+0j)    hit@10 : (0.1485+0j)    hit@20 : (0.2481+0j)    
+Sat 06 Jul 2024 05:23:45 INFO  [1;34mSaving current best[0m: F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:24:12 INFO  [1;32mepoch 27 training[0m [[1;34mtime[0m: 27.08s, [1;34mtrain loss[0m: 2115.7522]
+Sat 06 Jul 2024 05:24:12 INFO  [1;32mepoch 27 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.133600]
+Sat 06 Jul 2024 05:24:12 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0527+0j)    ndcg@10 : (0.0678+0j)    ndcg@20 : (0.094+0j)    hit@5 : (0.087+0j)    hit@10 : (0.1336+0j)    hit@20 : (0.2365+0j)    
+Sat 06 Jul 2024 05:24:40 INFO  [1;32mepoch 28 training[0m [[1;34mtime[0m: 27.53s, [1;34mtrain loss[0m: 2113.5178]
+Sat 06 Jul 2024 05:24:40 INFO  [1;32mepoch 28 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.133600]
+Sat 06 Jul 2024 05:24:40 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0472+0j)    ndcg@10 : (0.0651+0j)    ndcg@20 : (0.0917+0j)    hit@5 : (0.0785+0j)    hit@10 : (0.1336+0j)    hit@20 : (0.2397+0j)    
+Sat 06 Jul 2024 05:25:07 INFO  [1;32mepoch 29 training[0m [[1;34mtime[0m: 27.23s, [1;34mtrain loss[0m: 2111.8713]
+Sat 06 Jul 2024 05:25:07 INFO  [1;32mepoch 29 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.144200]
+Sat 06 Jul 2024 05:25:07 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0466+0j)    ndcg@10 : (0.0666+0j)    ndcg@20 : (0.0917+0j)    hit@5 : (0.0817+0j)    hit@10 : (0.1442+0j)    hit@20 : (0.2439+0j)    
+Sat 06 Jul 2024 05:25:34 INFO  [1;32mepoch 30 training[0m [[1;34mtime[0m: 27.24s, [1;34mtrain loss[0m: 2109.9000]
+Sat 06 Jul 2024 05:25:35 INFO  [1;32mepoch 30 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.130400]
+Sat 06 Jul 2024 05:25:35 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0438+0j)    ndcg@10 : (0.0604+0j)    ndcg@20 : (0.0879+0j)    hit@5 : (0.0795+0j)    hit@10 : (0.1304+0j)    hit@20 : (0.2397+0j)    
+Sat 06 Jul 2024 05:26:02 INFO  [1;32mepoch 31 training[0m [[1;34mtime[0m: 27.17s, [1;34mtrain loss[0m: 2109.0287]
+Sat 06 Jul 2024 05:26:02 INFO  [1;32mepoch 31 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.144200]
+Sat 06 Jul 2024 05:26:02 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0561+0j)    ndcg@10 : (0.0726+0j)    ndcg@20 : (0.095+0j)    hit@5 : (0.0933+0j)    hit@10 : (0.1442+0j)    hit@20 : (0.2322+0j)    
+Sat 06 Jul 2024 05:26:29 INFO  [1;32mepoch 32 training[0m [[1;34mtime[0m: 27.07s, [1;34mtrain loss[0m: 2108.5195]
+Sat 06 Jul 2024 05:26:29 INFO  [1;32mepoch 32 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.140000]
+Sat 06 Jul 2024 05:26:29 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.046+0j)    ndcg@10 : (0.0663+0j)    ndcg@20 : (0.0915+0j)    hit@5 : (0.0764+0j)    hit@10 : (0.14+0j)    hit@20 : (0.2407+0j)    
+Sat 06 Jul 2024 05:26:56 INFO  [1;32mepoch 33 training[0m [[1;34mtime[0m: 27.33s, [1;34mtrain loss[0m: 2105.7934]
+Sat 06 Jul 2024 05:26:56 INFO  [1;32mepoch 33 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.140000]
+Sat 06 Jul 2024 05:26:56 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0473+0j)    ndcg@10 : (0.0678+0j)    ndcg@20 : (0.096+0j)    hit@5 : (0.0774+0j)    hit@10 : (0.14+0j)    hit@20 : (0.2524+0j)    
+Sat 06 Jul 2024 05:27:24 INFO  [1;32mepoch 34 training[0m [[1;34mtime[0m: 27.09s, [1;34mtrain loss[0m: 2104.1677]
+Sat 06 Jul 2024 05:27:24 INFO  [1;32mepoch 34 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.141000]
+Sat 06 Jul 2024 05:27:24 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0423+0j)    ndcg@10 : (0.0647+0j)    ndcg@20 : (0.0909+0j)    hit@5 : (0.071+0j)    hit@10 : (0.141+0j)    hit@20 : (0.245+0j)    
+Sat 06 Jul 2024 05:27:51 INFO  [1;32mepoch 35 training[0m [[1;34mtime[0m: 26.97s, [1;34mtrain loss[0m: 2103.3210]
+Sat 06 Jul 2024 05:27:51 INFO  [1;32mepoch 35 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.133600]
+Sat 06 Jul 2024 05:27:51 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.042+0j)    ndcg@10 : (0.0617+0j)    ndcg@20 : (0.0887+0j)    hit@5 : (0.0721+0j)    hit@10 : (0.1336+0j)    hit@20 : (0.2418+0j)    
+Sat 06 Jul 2024 05:28:18 INFO  [1;32mepoch 36 training[0m [[1;34mtime[0m: 26.98s, [1;34mtrain loss[0m: 2100.9479]
+Sat 06 Jul 2024 05:28:18 INFO  [1;32mepoch 36 evaluating[0m [[1;34mtime[0m: 0.10s, [1;34mvalid_score[0m: 0.137900]
+Sat 06 Jul 2024 05:28:18 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0441+0j)    ndcg@10 : (0.064+0j)    ndcg@20 : (0.0897+0j)    hit@5 : (0.0764+0j)    hit@10 : (0.1379+0j)    hit@20 : (0.2397+0j)    
+Sat 06 Jul 2024 05:28:45 INFO  [1;32mepoch 37 training[0m [[1;34mtime[0m: 27.04s, [1;34mtrain loss[0m: 2100.1921]
+Sat 06 Jul 2024 05:28:45 INFO  [1;32mepoch 37 evaluating[0m [[1;34mtime[0m: 0.11s, [1;34mvalid_score[0m: 0.147400]
+Sat 06 Jul 2024 05:28:45 INFO  [1;34mvalid result[0m: 
+ndcg@5 : (0.0511+0j)    ndcg@10 : (0.0708+0j)    ndcg@20 : (0.0929+0j)    hit@5 : (0.0848+0j)    hit@10 : (0.1474+0j)    hit@20 : (0.2354+0j)    
+Sat 06 Jul 2024 05:28:45 INFO  Finished training, best eval result in epoch 26
+Sat 06 Jul 2024 05:28:46 INFO  Loading model structure and parameters from F:\Essex\dissertation\CFIT4SRec\log\CFIT4SRec\ml-100k\bs256-lmd0.1-sem0.1-us_x-Jul-06-2024_05-11-23-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5\model.pth
+Sat 06 Jul 2024 05:28:47 INFO  [1;33mbest valid [0m: {'ndcg@5': (0.0487+0j), 'ndcg@10': (0.0716+0j), 'ndcg@20': (0.0967+0j), 'hit@5': (0.0774+0j), 'hit@10': (0.1485+0j), 'hit@20': (0.2481+0j)}
+Sat 06 Jul 2024 05:28:47 INFO  [1;33mtest result[0m: {'ndcg@5': (0.0435+0j), 'ndcg@10': (0.0609+0j), 'ndcg@20': (0.0869+0j), 'hit@5': (0.0721+0j), 'hit@10': (0.1273+0j), 'hit@20': (0.2301+0j)}
